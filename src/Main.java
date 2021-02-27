@@ -22,8 +22,7 @@ public class Main {
 //            arrL.add(i);
 //        }
 //        System.out.println("LinkedList" + (System.nanoTime() - nano2) );
-
-        int MAX_VAL = 10000;
+int MAX_VAL = 10000;
         List<Integer> linkedList = new LinkedList<>();
         List<Integer> arrayList = new ArrayList<>();
 
@@ -41,19 +40,19 @@ public class Main {
 
         System.out.println("-----------MIddle-------------");
 
-        long centerTime = System.nanoTime();
+        long centerTime = System.currentTimeMillis();
 
 
         for(int i = 0; i < MAX_VAL; i++) {
-            linkedList.add(MAX_VAL/2, i);
+            linkedList.add( i, MAX_VAL/2);
         }
-        System.out.println("LinkedList centerTime_Middle:\t" + (System.nanoTime() - centerTime));
+        System.out.println("LinkedList centerTime_Middle:\t" + (System.currentTimeMillis() - centerTime));
 
-        centerTime = System.nanoTime();
+        centerTime = System.currentTimeMillis();
         for(int i = 0; i < MAX_VAL; i++) {
-            arrayList.add(i, MAX_VAL/2);
+            arrayList.add( i, MAX_VAL/2);
         }
-        System.out.println("ArrayList centerTime_Middle:\t" + (System.nanoTime() - centerTime));
+        System.out.println("ArrayList centerTime_Middle:\t" + (System.currentTimeMillis() - centerTime));
 
         System.out.println("-----------Remove-------------");
 
