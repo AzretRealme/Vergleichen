@@ -62,12 +62,12 @@ public class Main {
         for(int i = 0; i < MAX_VAL; i++) {
             linkedList.remove(1);
         }
-        System.out.println("LinkedList remove_index-1000:\t" + (System.nanoTime() - removeTime));
+        System.out.println("LinkedList remove_index-1:\t" + (System.nanoTime() - removeTime));
 
         for(int i = 0; i < MAX_VAL; i++) {
             arrayList.remove(1);
         }
-        System.out.println("ArrayList remove_index-1000:\t" + (System.nanoTime() - removeTime));
+        System.out.println("ArrayList remove_index-1:\t" + (System.nanoTime() - removeTime));
 
         System.out.println("-----------Iterator-------------");
 
